@@ -1,3 +1,18 @@
+# IDE编辑器项目配置文件
+.idea
+nbproject
+.buildpath
+.project
+.settings
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.svn
+*.log
+*.bak
+*.swp
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
