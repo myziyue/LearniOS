@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  HelloWorld
+//  UIView
 //
-//  Created by MyZiyue on 2018/12/7.
+//  Created by MyZiyue on 2018/12/10.
 //  Copyright © 2018 MyZiyue.com. All rights reserved.
 //
 
@@ -17,10 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 
