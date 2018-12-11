@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     @IBAction func onClick(_ sender: Any) {
-         NSLog("OK Button onClick")
+        NSLog("OK Button onClick")
+        self.label.text = "HelloWorld"
     }
     override func viewDidLoad() {
         super.viewDidLoad()

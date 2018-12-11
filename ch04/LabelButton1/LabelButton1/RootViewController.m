@@ -10,6 +10,8 @@
 
 @interface RootViewController ()
 
+@property (strong, nonatomic) UILabel *label;
+
 @end
 
 @implementation RootViewController
@@ -22,11 +24,11 @@
     CGFloat labelHeight = 20;
     CGFloat labelTopView = 150;
     
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake((screen.size.width - labelWidth)/2, labelTopView, labelWidth, labelHeight)];
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake((screen.size.width - labelWidth)/2, labelTopView, labelWidth, labelHeight)];
     
-    label.text = @"Label";
-    label.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:label];
+    self.label.text = @"Label";
+    self.label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.label];
     
     UIButton* button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"OK" forState:UIControlStateNormal];
@@ -44,6 +46,7 @@
 
 - (void)onClick:(id)sender {
     NSLog(@"OK Button onClick");
+    self.label.text = @"HelloWorld";
 }
 
 - (void)didReceiveMemoryWarning {

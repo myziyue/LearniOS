@@ -9,6 +9,7 @@
 import UIKit
 
 class RootViewController: UIViewController {
+    var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +19,11 @@ class RootViewController: UIViewController {
         let labelWidth:CGFloat = 90
         let labelHeight:CGFloat = 20
         let labelTopView:CGFloat = 150
-        let label = UILabel(frame: CGRect(x:(screen.size.width - labelWidth)/2, y:labelTopView, width:labelWidth, height:labelHeight))
+        self.label = UILabel(frame: CGRect(x:(screen.size.width - labelWidth)/2, y:labelTopView, width:labelWidth, height:labelHeight))
         
-        label.text = "Label"
-        label.textAlignment = .center
-        self.view.addSubview(label)
+        self.label.text = "Label"
+        self.label.textAlignment = .center
+        self.view.addSubview(self.label)
         
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setTitle("OK", for: UIControl.State.normal)
@@ -40,6 +41,7 @@ class RootViewController: UIViewController {
     
     @objc func onClick(sender: Any) {
         NSLog("OK Button onClick.")
+        self.label.text = "HelloWorld"
     }
     
     override func didReceiveMemoryWarning() {

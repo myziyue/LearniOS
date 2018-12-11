@@ -21,5 +21,6 @@
 
 - (IBAction)onClick:(id)sender {
     NSLog(@"OK Button onClick");
+    self.label.text = @"HelloWorld";
 }
 @end
