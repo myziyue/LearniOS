@@ -38,7 +38,7 @@ class RootViewController: UIViewController {
         self.view.addSubview(button)
     }
     
-    @objc func onClick(sender: AnyObject) {
+    @objc func onClick(sender: Any) {
         NSLog("OK Button onClick.")
     }
     
