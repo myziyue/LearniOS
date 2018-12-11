@@ -22,6 +22,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         
         textField.borderStyle = UITextField.BorderStyle.roundedRect
         textField.delegate = self
+        textField.returnKeyType = UIReturnKeyType.next
+        textField.keyboardType = UIKeyboardType.numbersAndPunctuation
         
         self.view.addSubview(textField)
         
@@ -37,8 +39,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         let textView = UITextView(frame: CGRect(x:(screen.size.width - textViewWidth)/2, y:textViewTopView, width:textViewWidth, height:textViewHeight))
         
         textView.text = "Lorem ipsum dolor sit er elit lamet, ..."
-        
         textView.delegate = self
+        textView.returnKeyType = UIReturnKeyType.go
+        textView.keyboardType = UIKeyboardType.numbersAndPunctuation
+        
         self.view.addSubview(textView)
         
         // labelAbstract标签与textView之间的距离

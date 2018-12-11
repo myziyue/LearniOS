@@ -28,6 +28,9 @@
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.delegate = self;
     
+    textField.returnKeyType = UIReturnKeyNext;
+    textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    
     [self.view addSubview:textField];
     
     // labelName标签与TextFieldj之间的距离
@@ -44,6 +47,8 @@
     
     textView.text = @"Lorem ipsum dolor sit er elit lamet, ...";
     textView.delegate = self;
+    textView.returnKeyType = UIReturnKeyGo;
+    textView.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     
     [self.view addSubview:textView];
     
