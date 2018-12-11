@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C736AB2621BF5F4C005C55AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736AB2521BF5F4C005C55AC /* AppDelegate.swift */; };
-		C736AB2821BF5F4C005C55AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736AB2721BF5F4C005C55AC /* ViewController.swift */; };
-		C736AB2B21BF5F4C005C55AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C736AB2921BF5F4C005C55AC /* Main.storyboard */; };
 		C736AB2D21BF5F4D005C55AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736AB2C21BF5F4D005C55AC /* Assets.xcassets */; };
 		C736AB3021BF5F4D005C55AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C736AB2E21BF5F4D005C55AC /* LaunchScreen.storyboard */; };
+		C736AB3821BF5F6A005C55AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736AB3721BF5F6A005C55AC /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C736AB2221BF5F4C005C55AC /* SLabelButton1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLabelButton1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C736AB2521BF5F4C005C55AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C736AB2721BF5F4C005C55AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C736AB2A21BF5F4C005C55AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C736AB2C21BF5F4D005C55AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C736AB2F21BF5F4D005C55AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C736AB3121BF5F4D005C55AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C736AB3721BF5F6A005C55AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				C736AB2521BF5F4C005C55AC /* AppDelegate.swift */,
-				C736AB2721BF5F4C005C55AC /* ViewController.swift */,
-				C736AB2921BF5F4C005C55AC /* Main.storyboard */,
 				C736AB2C21BF5F4D005C55AC /* Assets.xcassets */,
 				C736AB2E21BF5F4D005C55AC /* LaunchScreen.storyboard */,
 				C736AB3121BF5F4D005C55AC /* Info.plist */,
+				C736AB3721BF5F6A005C55AC /* RootViewController.swift */,
 			);
 			path = SLabelButton1;
 			sourceTree = "<group>";
@@ -124,7 +121,6 @@
 			files = (
 				C736AB3021BF5F4D005C55AC /* LaunchScreen.storyboard in Resources */,
 				C736AB2D21BF5F4D005C55AC /* Assets.xcassets in Resources */,
-				C736AB2B21BF5F4C005C55AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C736AB2821BF5F4C005C55AC /* ViewController.swift in Sources */,
+				C736AB3821BF5F6A005C55AC /* RootViewController.swift in Sources */,
 				C736AB2621BF5F4C005C55AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C736AB2921BF5F4C005C55AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C736AB2A21BF5F4C005C55AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C736AB2E21BF5F4D005C55AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
