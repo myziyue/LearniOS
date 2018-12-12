@@ -47,6 +47,22 @@ class ViewController: UIViewController {
         self.leftSwitch.addTarget(self, action: #selector(switchValueChanged), for: UIControl.Event.valueChanged)
         
         self.view.addSubview(self.leftSwitch)
+        
+        // 3. 添加segmentedController控件
+        let segments = ["Right", "Left"]
+        let segmentedControl = UISegmentedControl(items: segments)
+        
+        let scWidth:CGFloat = 220
+        let scHeight:CGFloat = 29
+        let scTopView:CGFloat = 186
+        frame = CGRect(x:(screen.size.width - scWidth)/2, y:scTopView, width:scWidth, height:scHeight)
+        // 重新设置控件的位置
+        segmentedControl.frame = frame
+        // 设置控件状态
+        segmentedControl.selectedSegmentIndex = 0
+        // 指定事件处理方法
+        segmentedControl.addTarget(self, action: #selector(touchDown), for: UIControl.Event.valueChanged)
+        self.view.addSubview(segmentedControl)
     }
 
     @IBAction func switchValueChanged(sender: AnyObject) {
@@ -54,6 +70,19 @@ class ViewController: UIViewController {
         let setting = withSwitch.isOn
         self.leftSwitch.setOn(setting, animated: true)
         self.rightSwitch.setOn(setting, animated: true)
+    }
+    
+    @IBAction func touchDown(sender: AnyObject) {
+        let segmentedControl = sender as! UISegmentedControl
+        NSLog("选择的段：%li", segmentedControl.selectedSegmentIndex)
+        
+        if(self.leftSwitch.isHidden == true) {
+            self.leftSwitch.isHidden = false
+            self.rightSwitch.isHidden = false
+        } else {
+            self.leftSwitch.isHidden = true
+            self.rightSwitch.isHidden = true
+        }
     }
 }
 
