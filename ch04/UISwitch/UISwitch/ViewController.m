@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *sliderValue;
 
 @end
 
@@ -38,5 +39,11 @@
         self.leftSwitch.hidden = true;
         self.rightSwitch.hidden = true;
     }
+}
+- (IBAction)sliderValueChanged:(id)sender {
+    UISlider *slider = (UISlider *)sender;
+    int progressAsInt = (int)(slider.value);
+    NSString *newText = [[NSString alloc] initWithFormat:@"%d", progressAsInt];
+    self.sliderValue.text = newText;
 }
 @end

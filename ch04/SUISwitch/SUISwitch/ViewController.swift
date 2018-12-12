@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var leftSwitch: UISwitch!
     @IBOutlet weak var rightSwitch: UISwitch!
+    @IBOutlet weak var sliderValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,12 @@ class ViewController: UIViewController {
             self.rightSwitch.isHidden = true
             self.leftSwitch.isHidden = true
         }
+    }
+    @IBAction func sliderValueChange(_ sender: Any) {
+        let slider = sender as! UISlider
+        let progressAsInt = Int(slider.value)
+        let newText = NSString(format: "%d", progressAsInt)
+        self.sliderValue.text = newText as String
     }
 }
 

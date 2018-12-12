@@ -63,6 +63,34 @@ class ViewController: UIViewController {
         // 指定事件处理方法
         segmentedControl.addTarget(self, action: #selector(touchDown), for: UIControl.Event.valueChanged)
         self.view.addSubview(segmentedControl)
+        
+        // 4.添加slider控件
+        let sliderWidth:CGFloat = 300;
+        let sliderHeight:CGFloat = 31;
+        let sliderTopView:CGFloat = 298;
+        let slider = UISlider(frame: CGRect(x:(screen.size.width - sliderWidth)/2, y:sliderTopView, width:sliderWidth, height:sliderHeight))
+        
+        slider.minimumValue = 0.0
+        slider.maximumValue = 100.0
+        slider.value = 50.0
+        
+        // 指定事件处理方法
+        slider.addTarget(self, action: #selector(sliderValueChanged), for: UIControl.Event.valueChanged)
+        
+        self.view.addSubview(slider)
+        
+        // 5. 添加sliderValue：标签
+        // sliderValue:标签与slider之间的距离
+        let labelSliderValueSliderSpace:CGFloat = 30
+        let labelSliderValue = UILabel(frame: CGRect(x:slider.frame.origin.x, y:(slider.frame.origin.y - labelSliderValueSliderSpace), width:103, height:21))
+        
+        labelSliderValue.text = "Slider Value:"
+        self.view.addSubview(labelSliderValue)
+        
+        // 6. 添加sliderValue标签
+        self.sliderValue = UILabel(frame: CGRect(x:(labelSliderValue.frame.origin.x + 120), y:labelSliderValue.frame.origin.y, width:50, height:21))
+        self.sliderValue.text = "50"
+        self.view.addSubview(self.sliderValue)
     }
 
     @IBAction func switchValueChanged(sender: AnyObject) {
@@ -83,6 +111,14 @@ class ViewController: UIViewController {
             self.leftSwitch.isHidden = true
             self.rightSwitch.isHidden = true
         }
+    }
+    
+    @IBAction func sliderValueChanged(sender: AnyObject) {
+        let slider = sender as! UISlider
+        let progresssAsInt = Int(slider.value)
+        let newText = String(format: "%d", progresssAsInt)
+        NSLog("滑块的值：%@", newText)
+        self.sliderValue.text = newText
     }
 }
 

@@ -69,6 +69,32 @@
     [segmentedControl addTarget:self action:@selector(touchDown:) forControlEvents:UIControlEventValueChanged];
     
     [self.view addSubview:segmentedControl];
+    
+    // 4.添加slider控件
+    CGFloat sliderWidth = 300;
+    CGFloat sliderHeight = 31;
+    CGFloat sliderTopView = 298;
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake((screen.size.width - sliderWidth)/2, sliderTopView, sliderWidth, sliderHeight)];
+    
+    slider.minimumValue = 0.0f;
+    slider.maximumValue = 100.0f;
+    slider.value = 50.0f;
+    
+    // 指定事件处理方法
+    [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+    
+    // 5.添加SliderValue：标签
+    // Slider Value: 标签与slider之间的距离
+    CGFloat labelSliderValueSliderSpace = 30;
+    UILabel *labelSliderValue = [[UILabel alloc] initWithFrame:CGRectMake(slider.frame.origin.x, slider.frame.origin.y - labelSliderValueSliderSpace, 103, 21)];
+    labelSliderValue.text = @"Slider Value:";
+    [self.view addSubview:labelSliderValue];
+    
+    // 6.添加SliderValue标签
+    self.sliderValue = [[UILabel alloc] initWithFrame:CGRectMake(labelSliderValue.frame.origin.x + 120, labelSliderValue.frame.origin.y, 50, 21)];
+    self.sliderValue.text = @"50";
+    [self.view addSubview:self.sliderValue];
 }
 
 -(void)switchValueChanged:(id)sender {
@@ -89,6 +115,14 @@
         self.leftSwitch.hidden = true;
         self.rightSwitch.hidden = true;
     }
+}
+
+-(void)sliderValueChanged:(id)sender{
+    UISlider *slider = (UISlider *)sender;
+    int progressAsInt = (int)(slider.value);
+    NSString *newText = [[NSString alloc]initWithFormat:@"%d", progressAsInt];
+    NSLog(@"滑块的值：%@", newText);
+    self.sliderValue.text = newText;
 }
 
 
