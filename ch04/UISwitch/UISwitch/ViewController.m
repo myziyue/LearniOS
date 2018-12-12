@@ -27,5 +27,16 @@
     [self.leftSwitch setOn:setting animated:TRUE];
     [self.rightSwitch setOn:setting animated:FALSE];
 }
-
+- (IBAction)touchDown:(id)sender {
+    UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
+    NSLog(@"选择的段：%li", segmentedControl.selectedSegmentIndex);
+    
+    if(self.leftSwitch.hidden) {
+        self.rightSwitch.hidden = false;
+        self.leftSwitch.hidden = false;
+    } else {
+        self.leftSwitch.hidden = true;
+        self.rightSwitch.hidden = true;
+    }
+}
 @end

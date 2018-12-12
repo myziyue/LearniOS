@@ -30,12 +30,25 @@
                                     <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="r2p-Eg-d7O"/>
                                 </connections>
                             </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-Zs-5mB">
+                                <rect key="frame" x="127" y="192" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Left"/>
+                                    <segment title="Right"/>
+                                </segments>
+                                <connections>
+                                    <action selector="touchDown:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Bv-30-mlK"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p2N-Y1-bpz" firstAttribute="top" secondItem="DzQ-Rh-g2Q" secondAttribute="top" id="GOi-Sz-o3v"/>
+                            <constraint firstItem="9iD-Zs-5mB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="YFV-x8-IAK"/>
                             <constraint firstItem="p2N-Y1-bpz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="bbS-si-PZf"/>
+                            <constraint firstItem="9iD-Zs-5mB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="feC-Dq-IXM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DzQ-Rh-g2Q" secondAttribute="trailing" constant="50" id="qmV-K9-s9A"/>
+                            <constraint firstItem="9iD-Zs-5mB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="r8e-KP-jzy"/>
                             <constraint firstItem="p2N-Y1-bpz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="ui2-Qk-xXI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -30,10 +30,23 @@
                                     <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qSf-of-BbH"/>
                                 </connections>
                             </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x4L-AK-VCJ">
+                                <rect key="frame" x="141" y="188" width="93" height="28"/>
+                                <segments>
+                                    <segment title="Left"/>
+                                    <segment title="Right"/>
+                                </segments>
+                                <connections>
+                                    <action selector="touchDown:" destination="BYZ-38-t0r" eventType="valueChanged" id="sIv-8g-Oqi"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x4L-AK-VCJ" secondAttribute="bottom" constant="452" id="Kzs-Ta-65N"/>
                             <constraint firstItem="N1Q-lK-LHf" firstAttribute="top" secondItem="s3c-Zy-WGM" secondAttribute="top" id="TZZ-yT-Q67"/>
+                            <constraint firstItem="x4L-AK-VCJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UXf-gh-n64"/>
+                            <constraint firstItem="x4L-AK-VCJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="ePP-DC-vHu"/>
                             <constraint firstItem="N1Q-lK-LHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="mry-b0-dEv"/>
                             <constraint firstItem="N1Q-lK-LHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="nP0-th-353"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s3c-Zy-WGM" secondAttribute="trailing" constant="66" id="o0b-eN-bg4"/>

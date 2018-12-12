@@ -25,5 +25,17 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func touchDown(_ sender: Any) {
+        let segmentedControl = sender as! UISegmentedControl
+        NSLog("选择的段：%li", segmentedControl.selectedSegmentIndex)
+        
+        if(self.leftSwitch.isHidden == true) {
+            self.leftSwitch.isHidden = false
+            self.rightSwitch.isHidden = false
+        } else {
+            self.rightSwitch.isHidden = true
+            self.leftSwitch.isHidden = true
+        }
+    }
 }
 
