@@ -27,9 +27,8 @@
     
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.delegate = self;
-    
     textField.returnKeyType = UIReturnKeyNext;
-    textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    textField.keyboardType = UIKeyboardTypeASCIICapable;
     
     [self.view addSubview:textField];
     
@@ -47,8 +46,8 @@
     
     textView.text = @"Lorem ipsum dolor sit er elit lamet, ...";
     textView.delegate = self;
-    textView.returnKeyType = UIReturnKeyGo;
-    textView.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    textView.returnKeyType = UIReturnKeyNext;
+    textView.keyboardType = UIKeyboardTypeASCIICapable;
     
     [self.view addSubview:textView];
     

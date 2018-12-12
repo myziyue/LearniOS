@@ -23,7 +23,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         textField.borderStyle = UITextField.BorderStyle.roundedRect
         textField.delegate = self
         textField.returnKeyType = UIReturnKeyType.next
-        textField.keyboardType = UIKeyboardType.numbersAndPunctuation
+        textField.keyboardType = UIKeyboardType.asciiCapable
         
         self.view.addSubview(textField)
         
@@ -41,7 +41,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         textView.text = "Lorem ipsum dolor sit er elit lamet, ..."
         textView.delegate = self
         textView.returnKeyType = UIReturnKeyType.go
-        textView.keyboardType = UIKeyboardType.numbersAndPunctuation
+        textView.keyboardType = UIKeyboardType.asciiCapable
         
         self.view.addSubview(textView)
         
