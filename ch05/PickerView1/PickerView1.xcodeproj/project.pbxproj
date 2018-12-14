@@ -12,6 +12,7 @@
 		C7FCD5FF21C3395700020FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD5FE21C3395700020FB4 /* Assets.xcassets */; };
 		C7FCD60221C3395700020FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD60021C3395700020FB4 /* LaunchScreen.storyboard */; };
 		C7FCD60521C3395700020FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FCD60421C3395700020FB4 /* main.m */; };
+		C7FCD62E21C34F2900020FB4 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD62D21C34F2900020FB4 /* provinces_cities.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C7FCD60121C3395700020FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FCD60321C3395700020FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FCD60421C3395700020FB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7FCD62D21C34F2900020FB4 /* provinces_cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = provinces_cities.plist; path = ../../PickerView/PickerView/provinces_cities.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C7FCD5F421C3395600020FB4 /* PickerView1 */ = {
 			isa = PBXGroup;
 			children = (
+				C7FCD62D21C34F2900020FB4 /* provinces_cities.plist */,
 				C7FCD5F521C3395600020FB4 /* AppDelegate.h */,
 				C7FCD5F621C3395600020FB4 /* AppDelegate.m */,
 				C7FCD5F821C3395600020FB4 /* ViewController.h */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FCD60221C3395700020FB4 /* LaunchScreen.storyboard in Resources */,
+				C7FCD62E21C34F2900020FB4 /* provinces_cities.plist in Resources */,
 				C7FCD5FF21C3395700020FB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

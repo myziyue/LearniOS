@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()  <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 @property (nonatomic, strong) NSDictionary* pickerData;
 @property (nonatomic, strong) NSArray* pickerProvincesData;
@@ -63,6 +63,9 @@
     button.frame = CGRectMake((screen.size.width - buttonWidth)/2, buttonTopView, buttonWidth, buttonHeight);
     [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    self.pickerView.dataSource = self;
+    self.pickerView.delegate = self;
 }
 
 - (IBAction)onClick:(id)sender {
@@ -74,6 +77,35 @@
     NSString* title = [[NSString alloc] initWithFormat:@"%@, %@市",selected1,selected2];
     
     self.label.text = title;
+}
+
+// 实现协议UIPickerDataSource方法
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 2;
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    if(component == 0) { // 省份个数
+        return [self.pickerProvincesData count];
+    } else {
+        return [self.pickerCitiesData count];
+    }
+}
+// 实现协议UIPickerDelegate方法
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if(component == 0 ) {
+        return [self.pickerProvincesData objectAtIndex:row];
+    } else {
+        return [self.pickerCitiesData objectAtIndex:row];
+    }
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if(component == 0) {
+        NSString* selectedProvince = [self.pickerProvincesData objectAtIndex:row];
+        NSArray* array = [self.pickerData objectForKey:selectedProvince];
+        self.pickerCitiesData = array;
+        [self.pickerView reloadComponent:1];
+        [self.pickerView selectRow:0 inComponent:1 animated:true];
+    }
 }
 
 @end

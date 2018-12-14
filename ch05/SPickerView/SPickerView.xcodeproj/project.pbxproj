@@ -12,6 +12,7 @@
 		C7FCD5B721C2B97800020FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD5B521C2B97800020FB4 /* Main.storyboard */; };
 		C7FCD5B921C2B97900020FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD5B821C2B97900020FB4 /* Assets.xcassets */; };
 		C7FCD5BC21C2B97900020FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD5BA21C2B97900020FB4 /* LaunchScreen.storyboard */; };
+		C7FCD62C21C345D400020FB4 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD62B21C345D400020FB4 /* provinces_cities.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C7FCD5B821C2B97900020FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FCD5BB21C2B97900020FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FCD5BD21C2B97900020FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FCD62B21C345D400020FB4 /* provinces_cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces_cities.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		C7FCD5B021C2B97800020FB4 /* SPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				C7FCD62B21C345D400020FB4 /* provinces_cities.plist */,
 				C7FCD5B121C2B97800020FB4 /* AppDelegate.swift */,
 				C7FCD5B321C2B97800020FB4 /* ViewController.swift */,
 				C7FCD5B521C2B97800020FB4 /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FCD5BC21C2B97900020FB4 /* LaunchScreen.storyboard in Resources */,
+				C7FCD62C21C345D400020FB4 /* provinces_cities.plist in Resources */,
 				C7FCD5B921C2B97900020FB4 /* Assets.xcassets in Resources */,
 				C7FCD5B721C2B97800020FB4 /* Main.storyboard in Resources */,
 			);

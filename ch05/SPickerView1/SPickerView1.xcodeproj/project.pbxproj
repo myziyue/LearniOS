@@ -11,6 +11,7 @@
 		C7FCD61A21C3396900020FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCD61921C3396900020FB4 /* ViewController.swift */; };
 		C7FCD61F21C3396900020FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD61E21C3396900020FB4 /* Assets.xcassets */; };
 		C7FCD62221C3396900020FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD62021C3396900020FB4 /* LaunchScreen.storyboard */; };
+		C7FCD62A21C342E800020FB4 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7FCD62921C342E800020FB4 /* provinces_cities.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C7FCD61E21C3396900020FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FCD62121C3396900020FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FCD62321C3396900020FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FCD62921C342E800020FB4 /* provinces_cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = provinces_cities.plist; path = ../../PickerView/PickerView/provinces_cities.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		C7FCD61621C3396900020FB4 /* SPickerView1 */ = {
 			isa = PBXGroup;
 			children = (
+				C7FCD62921C342E800020FB4 /* provinces_cities.plist */,
 				C7FCD61721C3396900020FB4 /* AppDelegate.swift */,
 				C7FCD61921C3396900020FB4 /* ViewController.swift */,
 				C7FCD61E21C3396900020FB4 /* Assets.xcassets */,
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FCD62221C3396900020FB4 /* LaunchScreen.storyboard in Resources */,
+				C7FCD62A21C342E800020FB4 /* provinces_cities.plist in Resources */,
 				C7FCD61F21C3396900020FB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
