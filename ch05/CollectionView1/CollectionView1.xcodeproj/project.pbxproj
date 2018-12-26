@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71D90E321D3588400EC174D /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D90E221D3588400EC174D /* EventCollectionViewCell.m */; };
 		C71ECDF621C909DA001A4B69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C71ECDF521C909DA001A4B69 /* AppDelegate.m */; };
 		C71ECDF921C909DA001A4B69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71ECDF821C909DA001A4B69 /* ViewController.m */; };
 		C71ECDFE21C909DC001A4B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71ECDFD21C909DC001A4B69 /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71D90E121D3588400EC174D /* EventCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		C71D90E221D3588400EC174D /* EventCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
 		C71ECDF121C909DA001A4B69 /* CollectionView1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71ECDF421C909DA001A4B69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C71ECDF521C909DA001A4B69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				C71ECDFF21C909DC001A4B69 /* LaunchScreen.storyboard */,
 				C71ECE0221C909DC001A4B69 /* Info.plist */,
 				C71ECE0321C909DC001A4B69 /* main.m */,
+				C71D90E121D3588400EC174D /* EventCollectionViewCell.h */,
+				C71D90E221D3588400EC174D /* EventCollectionViewCell.m */,
 			);
 			path = CollectionView1;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71ECDF921C909DA001A4B69 /* ViewController.m in Sources */,
+				C71D90E321D3588400EC174D /* EventCollectionViewCell.m in Sources */,
 				C71ECE0421C909DC001A4B69 /* main.m in Sources */,
 				C71ECDF621C909DA001A4B69 /* AppDelegate.m in Sources */,
 			);

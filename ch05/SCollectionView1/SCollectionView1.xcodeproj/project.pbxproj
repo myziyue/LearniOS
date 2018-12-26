@@ -20,6 +20,7 @@
 		C71ECE4B21C90B2F001A4B69 /* beach-volleyball.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71ECE4221C90B2F001A4B69 /* beach-volleyball.gif */; };
 		C71ECE4C21C90B2F001A4B69 /* badminton.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71ECE4321C90B2F001A4B69 /* badminton.gif */; };
 		C71ECE4D21C90B2F001A4B69 /* canoe-slalom.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71ECE4421C90B2F001A4B69 /* canoe-slalom.gif */; };
+		C7F7D29521D333D20056650C /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7D29421D333D20056650C /* EventCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C71ECE4221C90B2F001A4B69 /* beach-volleyball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "beach-volleyball.gif"; sourceTree = "<group>"; };
 		C71ECE4321C90B2F001A4B69 /* badminton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = badminton.gif; sourceTree = "<group>"; };
 		C71ECE4421C90B2F001A4B69 /* canoe-slalom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "canoe-slalom.gif"; sourceTree = "<group>"; };
+		C7F7D29421D333D20056650C /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				C71ECE1D21C909EB001A4B69 /* Assets.xcassets */,
 				C71ECE1F21C909EB001A4B69 /* LaunchScreen.storyboard */,
 				C71ECE2221C909EB001A4B69 /* Info.plist */,
+				C7F7D29421D333D20056650C /* EventCollectionViewCell.swift */,
 			);
 			path = SCollectionView1;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71ECE1921C909EA001A4B69 /* ViewController.swift in Sources */,
+				C7F7D29521D333D20056650C /* EventCollectionViewCell.swift in Sources */,
 				C71ECE1721C909EA001A4B69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
