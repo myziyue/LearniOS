@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Note {
+    var date: NSDate!
+    var content: NSString!
+    
+    init(date: NSDate, content: NSString) {
+        self.date = date
+        self.content = content
+    }
+    
+    init() {
+        self.date = NSDate()
+        self.content = ""
+    }
+}

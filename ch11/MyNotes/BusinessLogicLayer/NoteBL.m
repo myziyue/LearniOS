@@ -10,4 +10,21 @@
 
 @implementation NoteBL
 
+-(NSMutableArray*)createNote:(Note*)model{
+    NoteDAO* dao = [NoteDAO sharedInstance];
+    [dao create:model];
+    return [dao findAll];
+}
+
+-(NSMutableArray*)remove:(Note*)model{
+    NoteDAO* dao = [NoteDAO sharedInstance];
+    [dao remove:model];
+    return [dao findAll];
+}
+
+-(NSMutableArray*)findAll{
+    NoteDAO* dao = [NoteDAO sharedInstance];
+    return [dao findAll];
+}
+
 @end

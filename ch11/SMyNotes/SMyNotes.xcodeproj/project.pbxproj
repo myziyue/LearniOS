@@ -12,6 +12,9 @@
 		C7EBACD521D7057800363EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EBACD321D7057800363EF1 /* Main.storyboard */; };
 		C7EBACD721D7057900363EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EBACD621D7057900363EF1 /* Assets.xcassets */; };
 		C7EBACDA21D7057900363EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EBACD821D7057900363EF1 /* LaunchScreen.storyboard */; };
+		C7EBACE721D7082D00363EF1 /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBACE621D7082D00363EF1 /* NoteDAO.swift */; };
+		C7EBACE921D709C300363EF1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBACE821D709C300363EF1 /* Note.swift */; };
+		C7EBACEB21D70DEB00363EF1 /* NoteBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBACEA21D70DEB00363EF1 /* NoteBL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C7EBACD621D7057900363EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EBACD921D7057900363EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7EBACDB21D7057900363EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7EBACE621D7082D00363EF1 /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
+		C7EBACE821D709C300363EF1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C7EBACEA21D70DEB00363EF1 /* NoteBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,9 @@
 		C7EBACC321D7057800363EF1 = {
 			isa = PBXGroup;
 			children = (
+				C7EBACE321D706A300363EF1 /* PersistenceLayer */,
+				C7EBACE221D7069500363EF1 /* BusinessLogicLayer */,
+				C7EBACE121D7068700363EF1 /* PresentationLayer */,
 				C7EBACCE21D7057800363EF1 /* SMyNotes */,
 				C7EBACCD21D7057800363EF1 /* Products */,
 			);
@@ -55,13 +64,53 @@
 			isa = PBXGroup;
 			children = (
 				C7EBACCF21D7057800363EF1 /* AppDelegate.swift */,
-				C7EBACD121D7057800363EF1 /* ViewController.swift */,
-				C7EBACD321D7057800363EF1 /* Main.storyboard */,
 				C7EBACD621D7057900363EF1 /* Assets.xcassets */,
-				C7EBACD821D7057900363EF1 /* LaunchScreen.storyboard */,
 				C7EBACDB21D7057900363EF1 /* Info.plist */,
+				C7EBACD821D7057900363EF1 /* LaunchScreen.storyboard */,
+				C7EBACD321D7057800363EF1 /* Main.storyboard */,
+				C7EBACD121D7057800363EF1 /* ViewController.swift */,
 			);
 			path = SMyNotes;
+			sourceTree = "<group>";
+		};
+		C7EBACE121D7068700363EF1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		C7EBACE221D7069500363EF1 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBACEA21D70DEB00363EF1 /* NoteBL.swift */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		C7EBACE321D706A300363EF1 /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBACE521D7070F00363EF1 /* domain */,
+				C7EBACE421D7070700363EF1 /* dao */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		C7EBACE421D7070700363EF1 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBACE621D7082D00363EF1 /* NoteDAO.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		C7EBACE521D7070F00363EF1 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBACE821D709C300363EF1 /* Note.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EBACE721D7082D00363EF1 /* NoteDAO.swift in Sources */,
 				C7EBACD221D7057800363EF1 /* ViewController.swift in Sources */,
+				C7EBACEB21D70DEB00363EF1 /* NoteBL.swift in Sources */,
 				C7EBACD021D7057800363EF1 /* AppDelegate.swift in Sources */,
+				C7EBACE921D709C300363EF1 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
